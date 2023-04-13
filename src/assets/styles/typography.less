@@ -1,0 +1,53 @@
+h1, h2, h3, h4 {
+  font-weight: normal;
+} 
+.title {
+  font-size: 3rem;
+}
+.light-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #777;
+}
+.gray-text {
+  color: #777;
+}
+.size-1 {
+  font-size: 3rem;
+}
+.size-2 {
+  font-size: 2rem;
+}
+.size-3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.highlighted {
+  position: relative;
+  text-align: center;
+  width: fit-content;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+
+  &::before {
+    /* Highlight color */
+    background-color: @primary;
+    border-radius: 20% 25% 20% 24%;
+    content: '';
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 100%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(2deg);
+  }
+}
