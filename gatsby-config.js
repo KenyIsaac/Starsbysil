@@ -1,9 +1,9 @@
 /* eslint-disable */
 const {
-    NODE_ENV,
-    URL: NETLIFY_SITE_URL = 'https://meltemulutas.com',
-    CONTEXT: NETLIFY_ENV = NODE_ENV
-  } = process.env;
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://meltemulutas.com',
+  CONTEXT: NETLIFY_ENV = NODE_ENV
+} = process.env;
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -12,7 +12,7 @@ module.exports = {
   siteMetadata: {
     title: 'starsbysil',
     description:
-      'starsbysil | Blog ı | Contacto| Citas',
+      'starsbysil | Blog | Contacto| Citas',
     siteUrl: 'https://meltemulutas.com/'
   },
   plugins: [

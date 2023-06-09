@@ -17,7 +17,7 @@ const GetAppointment = () => (
         <div className='contact-info'>
           <ContactInfo />
         </div>
-        <Form/>
+        <Form />
       </section>
     </div>
   </Layout>

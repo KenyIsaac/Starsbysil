@@ -17,10 +17,10 @@ const TagRoute = ({ data, pageContext }) => {
     { tag } = pageContext,
     { title } = data.site.siteMetadata,
     { totalCount } = data.allMarkdownRemark,
-    tagHeader = ` ${tag} Encontrado den la página ${totalCount} publicación equitada.`;
+    tagHeader = ` ${tag} Encontrado en la página ${totalCount} publicación equitada.`;
   return (
     <Layout>
-      <Helmet title={`${tag} | ${title}`}/>
+      <Helmet title={`${tag} | ${title}`} />
       <Hero
         isHalfHero
         title={title}

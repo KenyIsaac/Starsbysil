@@ -134,13 +134,13 @@
       margin-top: 20px;
     }
 
-    .hamburger:not(.toggle) > div {
+    .hamburger:not(.toggle)>div {
       background: white;
     }
   }
 
   /*Stying for small screens*/
-                @media screen and (max-width: 800px) {
+  @media screen and (max-width: 800px) {
 
 
     .hamburger {
@@ -172,7 +172,7 @@
       justify-content: flex-start;
       align-items: flex-end;
       padding-top: 20vh;
-      
+
       .navbar-overlay {
         content: '';
         top: 0;
@@ -187,11 +187,13 @@
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -20%);
       }
+
       &.open {
         clip-path: circle(1500px at 90% -10%);
         -webkit-clip-path: circle(1500px at 90% -10%);
         pointer-events: all;
         color: black;
+
         .navbar-overlay {
           clip-path: circle(1500px at 90% -10%);
           -webkit-clip-path: circle(1500px at 90% -10%);
@@ -228,18 +230,22 @@
           opacity: 1;
           visibility: visible;
           transform: translateY(0%);
+
           &:nth-child(1) {
             transition: all 0.2s ease 0.4s;
             -webkit-transition: all 0.2s ease 0.4s;
           }
+
           &:nth-child(2) {
             transition: all 0.2s ease 0.6s;
             -webkit-transition: all 0.2s ease 0.6s;
           }
+
           &:nth-child(3) {
             transition: all 0.2s ease 0.8s;
             -webkit-transition: all 0.2s ease 0.8s;
           }
+
           &:nth-child(4) {
             transition: all 0.2s ease 1s;
             -webkit-transition: all 0.2s ease 1s;

@@ -17,7 +17,7 @@ const Contact = () => (
         <div className='contact-info'>
           <ContactInfo />
         </div>
-        <Form/>
+        <Form />
       </div>
     </section>
   </Layout>

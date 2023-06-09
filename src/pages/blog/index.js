@@ -6,7 +6,7 @@ import blog from '../../../static/img/blog-writing.jpg';
 
 const BlogIndexPage = () => (
   <Layout title={'Starsbysil | Blog'}>
-    <Hero title={'Blog'} background={blog} isHalfHero/>
+    <Hero title={'Blog'} background={blog} isHalfHero />
     <section className='page-container'>
       <BlogRoll />
     </section>

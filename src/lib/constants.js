@@ -12,7 +12,7 @@ export const contactInputs = [
   {
     pattern: '^(?:\\+|00)90\\d{10}$|^0\\d{10}$',
     label: 'Número de teléfono',
-    type: 'text',
+    type: 'number',
     key: 2,
     name: 'phone_number',
     message: 'Ingrese solo números',

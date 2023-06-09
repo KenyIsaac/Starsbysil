@@ -20,8 +20,8 @@ const IntersectionObserverWrapper = ({
       entries.forEach(entry => {
         if (entry.isIntersecting)
           setTimeout(() => setHasIntersected(true), 200);
-        /*  else
-          setHasIntersected(false); */
+        else
+          setHasIntersected(false);
 
       });
     });
@@ -35,7 +35,6 @@ const IntersectionObserverWrapper = ({
 
   const styles = {
     ...customStyle,
-    margin: '2rem 0',
     transform: hasIntersected ? 'none' : `${animations[animationSlide]}`,
     opacity: hasIntersected ? 1 : 0,
     transition: `all cubic-bezier(.175,.885,.32,1.275) ${

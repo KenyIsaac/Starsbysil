@@ -40,7 +40,7 @@ const Layout = ({ title, description, metaImage, titleTemplate, children, hasWhi
       <meta property='og:url' content='https://meltemulutas.com' />
       <meta
         property='og:site_name'
-        content='Starsbysil Lorem Ipsus'></meta>
+        content='Uzman Psikolog Meltem Ulutaş'></meta>
       <meta property="og:image" content={metaImage} />
       {/*       <meta
         property='og:image'
@@ -56,7 +56,16 @@ const Layout = ({ title, description, metaImage, titleTemplate, children, hasWhi
       <main>{children}</main>
       <Footer />
     </div>
-
+    {/*     <FloatingWhatsApp
+      phoneNumber='+905300954085'
+      accountName='Meltem Ulutaş'
+      chatMessage='Merhaba, nasıl yardımcı olabilirim?'
+      placeHolder='Mesajınız'
+      statusMessage='Şu anda aktif'
+      avatar={`${withPrefix('/')}img/psychology-logo.svg`}
+      notification={false}
+      buttonStyle={{ bottom: '1rem', right: '1rem' }}
+    /> */}
   </>
 );
 

@@ -8,6 +8,8 @@ import { graphql } from 'gatsby';
 import Hero from '../components/Hero';
 import '../assets/styles/main.less';
 import PropTypes from 'prop-types';
+import { Form } from '../components/Form';
+import IntersectionObserverWrapper from '../components/IntersectionObserver';
 
 
 export const IndexPageTemplate = ({
@@ -28,8 +30,14 @@ export const IndexPageTemplate = ({
         subheading={subheading}
       />
       <div className='page-container'>
-        <AboutSection about={about}/>
-        <Features features={intro.blurbs} heading={intro.heading}/>
+        <AboutSection about={about} />
+        <Features features={intro.blurbs} heading={intro.heading} />
+        <IntersectionObserverWrapper animationSlide={'slideLeft'} translate={20} delay={800} once={false}>
+          {/* <div style={{ maxWidth: '600px', margin: 'auto' }}>
+            <h1 className='highlighted'>İletişim</h1>
+            <Form />
+          </div> */}
+        </IntersectionObserverWrapper>
         <h1 className='highlighted m-auto'>Blog</h1>
         <BlogRoll />
       </div>

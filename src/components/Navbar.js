@@ -58,7 +58,7 @@ const Navbar = ({ hasWhiteBg }) => {
             <Link to='/contact' activeClassName={'active'}>Contacto</Link>
           </li>
           <li className='navbar-item'>
-            <Link to='/getappointment' activeClassName={'active'}>Citas</Link>
+            <Link to='/citas' activeClassName={'active'}>Citas</Link>
           </li>
           {/* Overlay */}
           <section className='navbar-overlay'></section>
